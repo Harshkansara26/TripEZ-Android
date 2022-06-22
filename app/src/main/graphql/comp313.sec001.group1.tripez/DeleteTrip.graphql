@@ -1,0 +1,3 @@
+mutation DeleteTrip($tripId : String!) {
+    deleteTrip(tripId: $tripId)
+}

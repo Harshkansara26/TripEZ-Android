@@ -1,0 +1,3 @@
+mutation UpdateUser($userId: String!, $userInput: edituserInputData!){
+    editUserInfo(userId: $userId, userInput: $userInput)
+}

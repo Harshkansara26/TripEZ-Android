@@ -1,0 +1,22 @@
+mutation UpdateTrip($tripid: String!, $tripData: tripInputData!) {
+    editUserTrip(tripid: $tripid, tripData: $tripData) {
+        _id
+        userId
+        tripName
+        tripLocation
+        days {
+            date
+            location
+            toDo {
+                task
+                isCompleted
+            }
+            notes
+        }
+        atendees {
+            name
+            email
+            phone
+        }
+    }
+}
