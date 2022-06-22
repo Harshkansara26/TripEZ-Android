@@ -1,0 +1,22 @@
+mutation CreateTrip($tripInput: tripInputData!) {
+    createTrip(tripInput: $tripInput) {
+        _id
+        userId
+        tripName
+        tripLocation
+        days {
+            date
+            location
+            toDo {
+                task
+                isCompleted
+            }
+            notes
+        }
+        atendees {
+            name
+            email
+            phone
+        }
+    }
+}

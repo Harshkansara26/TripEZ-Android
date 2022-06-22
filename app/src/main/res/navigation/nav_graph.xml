@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="comp313.sec001.group1.tripez.pages.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_authFragment"
+            app:destination="@id/auth_graph" />
+        <action
+            android:id="@+id/action_splashFragment_to_tripsFragment"
+            app:destination="@id/main_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="comp313.sec001.group1.tripez.pages.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+    </fragment>
+    <navigation android:id="@+id/auth_graph"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/registerFragment"
+            android:name="comp313.sec001.group1.tripez.pages.RegisterFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_register" >
+            <action
+                android:id="@+id/action_registerFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+            <action
+                android:id="@+id/action_registerFragment_to_home"
+                app:destination="@id/main_graph" />
+        </fragment>
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="comp313.sec001.group1.tripez.pages.LoginFragment"
+            android:label="fragment_auth"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_home"
+                app:destination="@id/main_graph" />
+            <action
+                android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/registerFragment" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/main_graph"
+        app:startDestination="@id/tripsFragment">
+        <fragment
+            android:id="@+id/tripsFragment"
+            android:name="comp313.sec001.group1.tripez.pages.TripsFragment"
+            android:label="fragment_trips"
+            tools:layout="@layout/fragment_trips" >
+            <action
+                android:id="@+id/action_tripsFragment_to_create_trip_graph"
+                app:destination="@id/create_trip_graph" />
+            <action
+                android:id="@+id/action_tripsFragment_to_viewTripFragment"
+                app:destination="@id/viewTripFragment" />
+        </fragment>
+        <navigation android:id="@+id/create_trip_graph"
+            app:startDestination="@id/createTripStep1">
+            <fragment
+                android:id="@+id/createTripStep1"
+                android:name="comp313.sec001.group1.tripez.pages.CreateTripStep1"
+                android:label="CreateTripStep1">
+                <action
+                    android:id="@+id/action_createTripStep1_to_createTripStep2"
+                    app:destination="@id/createTripStep2" />
+            </fragment>
+            <fragment
+                android:id="@+id/createTripStep2"
+                android:name="comp313.sec001.group1.tripez.pages.CreateTripStep2"
+                android:label="CreateTripStep2">
+                <action
+                    android:id="@+id/action_createTripStep2_to_tripsFragment"
+                    app:destination="@id/tripsFragment" />
+            </fragment>
+        </navigation>
+        <fragment
+            android:id="@+id/viewTripFragment"
+            android:name="comp313.sec001.group1.tripez.pages.ViewTripFragment"
+            android:label="ViewTripFragment" />
+    </navigation>
+</navigation>

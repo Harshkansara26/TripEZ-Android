@@ -1,0 +1,22 @@
+query Trip($tripId: String!) {
+    getTrip(tripId: $tripId) {
+        _id
+        userId
+        tripName
+        tripLocation
+        days {
+            date
+            location
+            toDo {
+                task
+                isCompleted
+            }
+            notes
+        }
+        atendees {
+            name
+            email
+            phone
+        }
+    }
+}

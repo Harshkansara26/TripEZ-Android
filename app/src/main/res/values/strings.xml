@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">TripEZ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account">Account</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_instead">Not Registered? Sign Up here</string>
+    <string name="register">Register</string>
+    <string name="login_instead">Already Registered? Login here</string>
+    <string name="is_required">%s is required</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="trips">Trips</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_trip">New Trip</string>
+    <string name="create_trip">Create Trip</string>
+    <string name="trip_name">Trip Name</string>
+    <string name="helper_trip_location">Enter a location. This will help you later with suggestions.</string>
+    <string name="trip_location">Trip Location</string>
+    <string name="trip_period">Trip Period:\n%s</string>
+    <string name="end_date">End Date</string>
+    <string name="next">Next</string>
+    <string name="select_dates">Select Dates</string>
+    <string name="click_to_select">(Click to select)</string>
+    <string name="n_days">Days: %s</string>
+    <string name="attendees">Attendees</string>
+    <string name="plan_trip">Plan Your Trip</string>
+    <string name="create">Create</string>
+    <string name="notes">Notes</string>
+    <string name="locations">Locations</string>
+    <string name="to_do">To Do</string>
+    <string name="add">Add</string>
+    <string name="day_num">Day: %s</string>
+    <string name="date">Date: %s</string>
+    <string name="select">Select</string>
+    <string name="enter_your_location">Enter your location</string>
+    <string name="select_location">Select Location</string>
+    <string name="home">Home</string>
+    <string name="view_trip">Trip Information</string>
+    <string name="download">Download</string>
+    <string name="trip_plan">Trip Plan</string>
+</resources>
